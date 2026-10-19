@@ -38,16 +38,28 @@ Pourquoi var est-il banni du code moderne ? Cherche ce que sont la portée de fo
 // Mes prédictions (avant d'exécuter) :
 //
 
+
+
+
+
+
+
+
 const ville = 'Kinshasa';
+let commune;
+let secret;
+
 if (true) {
-  const commune = 'Gombe';
+  commune = 'Gombe';
   console.log(ville);
 }
+
 console.log(commune);
 
 const afficher = () => {
-  const secret = 'pondu';
+  secret = 'pondu';
   return secret;
 };
+
 console.log(afficher());
 console.log(secret);
